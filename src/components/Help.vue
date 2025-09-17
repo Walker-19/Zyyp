@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import Nav from "./Nav.vue"
+import Footer from "./Footer.vue"
 
 const faqs = ref([
   {
@@ -71,6 +72,7 @@ const submitForm = () => {
       </form>
     </div>
   </section>
+  <Footer />
 </template>
 
 <style scoped>

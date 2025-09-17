@@ -7,6 +7,7 @@ import Register from '../components/Register.vue';
 import App_Admin from '../components/admin/App_Admin.vue';
 import Help from '@/components/Help.vue';
 import TarifPage from '@/components/TarifPage.vue';
+import RideHistory from '@/components/admin/RideHistory.vue';
 
 const routes = [
     {
@@ -40,15 +41,24 @@ const routes = [
         component: Register
     },
     {
+        path: '/tarif',
+        name: 'tarif',
+        component: TarifPage
+    },
+
+    // Dashboard
+    {
         path: '/dashboard',
         name: 'dashboard',
         component: App_Admin
     },
     {
-        path: '/tarif',
-        name: 'tarif',
-        component: TarifPage
+        path: '/dashboard/history',
+        name: 'historiques',
+        component: RideHistory
     }
+
+
 ]
 
 

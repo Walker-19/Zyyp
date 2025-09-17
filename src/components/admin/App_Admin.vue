@@ -11,6 +11,7 @@ const userStore = useUserStore()
 const router = useRouter();
 
 onMounted(() => {
+  console.log("user local: ", userStore.user.name)
     if(!userStore.user.name) {
         router.push('/account')
     }

@@ -6,32 +6,29 @@ const sections = ref([
   {
     title: 'Zypp',
     links: [
-      { name: 'À propos', path: '/about' },
-      { name: 'Carrières', path: '/careers' },
-      { name: 'Blog', path: '/blog' },
+      { name: 'À propos', path: '/about' }
     ],
   },
   {
     title: 'Services',
     links: [
       { name: 'Roulez avec nous', path: '/drive' },
-      { name: 'Louez une voiture', path: '/rent' },
       { name: 'Aide', path: '/help' },
     ],
   },
   {
     title: 'Support',
     links: [
-      { name: 'Contact', path: '/contact' },
-      { name: 'FAQ', path: '/faq' },
-      { name: 'Assistance', path: '/support' },
+      { name: 'Contact', path: '/help' },
+      { name: 'FAQ', path: '/help' },
+      { name: 'Assistance', path: '/help' },
     ],
   },
   {
     title: 'Légal',
     links: [
-      { name: 'Confidentialité', path: '/privacy' },
-      { name: 'Conditions', path: '/terms' },
+      { name: 'Confidentialité', path: '/' },
+      { name: 'Conditions', path: '/' },
     ],
   },
 ])

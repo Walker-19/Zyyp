@@ -48,15 +48,21 @@ import Nav from './Nav.vue';
                         :delay="500"
                         :duration="1100"
                 class="grid">
-                    <button class="btn-hero">
-                        <i class="mdi mdi-cellphone-arrow-down"></i>
-                        Télécharger l'application
-                    </button> 
-                    <button class="btn-hero">
-                        <i class="mdi mdi-scooter-electric"></i>
-                        Créer un compte
+                  <router-link to="/">
 
-                    </button> 
+                      <button class="btn-hero">
+                          <i class="mdi mdi-cellphone-arrow-down"></i>
+                          Télécharger l'application
+                        </button> 
+                    </router-link>
+                    <router-link to="/account">
+
+                        <button class="btn-hero">
+                            <i class="mdi mdi-scooter-electric"></i>
+                            Créer un compte
+                            
+                        </button> 
+                    </router-link>
                 </article>
                 
             </section>

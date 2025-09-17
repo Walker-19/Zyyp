@@ -28,10 +28,10 @@ function logout() {
 
     <nav class="sidebar-nav">
       <ul>
-        <li @click="navigate('/')">
+        <li @click="navigate('/dashboard')">
             <i class="mdi mdi-home"></i>
             Accueil</li>
-        <li @click="navigate('/users')">
+        <li @click="navigate('/dashboard/history')">
             <i class="mdi mdi-history"></i>
             Historiques</li>
       </ul>
