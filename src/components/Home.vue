@@ -59,7 +59,7 @@ import Nav from './Nav.vue';
 
                         <button class="btn-hero">
                             <i class="mdi mdi-scooter-electric"></i>
-                            Créer un compte
+                            Se connecter
                             
                         </button> 
                     </router-link>
