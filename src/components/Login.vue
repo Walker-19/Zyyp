@@ -17,7 +17,7 @@ const   handleLogin =async () => {
     console.log("email: ", email.value)
     const user = await supabase.from('user').select('*').eq('email', email.value).limit(1);
     if(user.error) {
-        console.log("error to connection", error)
+        console.log("error to connection", user.error)
     }
     if(user.data && user.data.length > 0) {
         const userData = user.data[0];
