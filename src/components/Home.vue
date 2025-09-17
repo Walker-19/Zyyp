@@ -54,7 +54,7 @@ import Nav from './Nav.vue';
                     </button> 
                     <button class="btn-hero">
                         <i class="mdi mdi-scooter-electric"></i>
-                        Louez une trottinette
+                        Créer un compte
 
                     </button> 
                 </article>
