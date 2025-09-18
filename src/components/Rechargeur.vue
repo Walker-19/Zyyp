@@ -5,7 +5,7 @@
   <section class="rechargeur">
     <!-- Hero -->
     <div class="hero">
-      <h2><i class="mdi mdi-battery-charging"></i> Devenez rechargeur Zypp</h2>
+      <h2 class="text-pulse"><i class="mdi mdi-battery-charging"></i> Devenez rechargeur Zypp</h2>
       <p>
         Aidez Zypp à rendre la mobilité urbaine plus durable tout en gagnant un revenu
         complémentaire depuis chez vous.
@@ -15,7 +15,7 @@
     <!-- Pourquoi -->
     <div class="why">
       <h3><i class="mdi mdi-lightbulb-on-outline"></i> Pourquoi devenir rechargeur ?</h3>
-      <ul>
+      <ul class="text-grey">
         <li><i class="mdi mdi-cash-multiple"></i> Gagnez de l’argent en rechargeant nos trottinettes la nuit</li>
         <li><i class="mdi mdi-leaf"></i> Participez à une mobilité plus écologique pour Montpellier</li>
         <li><i class="mdi mdi-clock-outline"></i> Flexibilité : vous choisissez vos disponibilités</li>

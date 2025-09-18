@@ -321,10 +321,8 @@ button {
 
   font-weight: bold;
 
-  color: #fff;
-
-  background: linear-gradient(90deg, #3C096C, #31263E);
-
+  color: #F2F2F2;
+  background:  #FF6B00;
   display: flex;
 
   align-items: center;

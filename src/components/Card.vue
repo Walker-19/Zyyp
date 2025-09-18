@@ -61,7 +61,7 @@ article {
 
        .icon-advantage {
             font-size: 40px;
-            color: #FF7900;
+            color: #FF6B00;
             /* padding: 20px; */
             border-radius: 15px;
             /* background-color: #fff; */

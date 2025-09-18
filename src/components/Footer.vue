@@ -72,7 +72,7 @@ const toggleTab = (index: number) => {
 .footer {
 width: 100%;
   box-sizing: border-box;
-  background: #3C096C;
+  background: #913BC4;
   color: white;
   padding: 40px 20px 20px;
 }

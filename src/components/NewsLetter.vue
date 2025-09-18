@@ -68,7 +68,7 @@
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-         background: linear-gradient(90deg, #FF6F00, #7B2CBF);
+         background: linear-gradient(90deg, #913BC4, #FF6B00);
         border: none;
         border-radius: 5px;
         cursor: pointer;

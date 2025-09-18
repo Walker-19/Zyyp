@@ -34,8 +34,27 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 .decoration-none {
   text-decoration: none;
+}
+
+     /* gradient text */
+    .gradient-text {
+  background: linear-gradient(90deg, #FF6F00, #7B2CBF);
+  -webkit-background-clip: text; /* nécessaire pour Chrome, Safari */
+  -webkit-text-fill-color: transparent; /* nécessaire pour Chrome, Safari */
+  background-clip: text; /* standard */
+  color: transparent; /* au cas où */
+  font-weight: bold;
+}
+.text-grey {
+  color: #2C2C2C;
+}
+.text-pulse {
+  color: #913BC4;
+}
+.text-urban{
+  color: #F2F2F2;
 }

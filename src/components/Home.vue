@@ -21,11 +21,11 @@ import Rechargeur from './Rechargeur.vue';
                 class="hero-text">
                     <h1>
                         <span>
-                            <span style="color: #FF7900;" class="hand-highlight">
+                            <span style="color: #FF6B00;" class="hand-highlight">
                                 Ensemble,
                             </span>
                         </span> construisons une mobilité
-                        <span style="color: #FF7900">
+                        <span style="color: #FF6B00">
                             plus propre
                         </span>
                     </h1>    
@@ -38,7 +38,7 @@ import Rechargeur from './Rechargeur.vue';
                       :duration="1050"
                       class="box-subheading">
                     <h2 class="subheading">
-                        <i class="mdi mdi-map-marker-radius" style="color: #FF7900;"></i>
+                        <i class="mdi mdi-map-marker-radius" style="color: #FF6B00;"></i>
                         Dès janvier 2026, Montpellier bouge autrement : rapide, pratique et écologique
                     </h2>
                 </article>
@@ -110,7 +110,7 @@ import Rechargeur from './Rechargeur.vue';
 
 
             <section class="advice">
-                <h3>
+                <h3 class="gradient-text">
                     4 étapes pour rouler avec Zypp
                 </h3>
                 <div class="grid">
@@ -193,14 +193,12 @@ import Rechargeur from './Rechargeur.vue';
         width: 100%;
         height: 100vh;
         margin-top: 80px;
-        background-color: #ffffff;
     }
    
         .hero {
             width: 100%;
             height: calc(100vh - 70px);
-            background-color: #a9a9a9;
-            background-color: #ffffff;
+            background-color: #F2F2F2;
             background-size: cover;
             background-position: center ;
             display: flex;
@@ -226,7 +224,7 @@ import Rechargeur from './Rechargeur.vue';
             font-size: 16px;
             font-weight: 600;
             color: #666;
-            border: 1px solid #FF7900;
+            border: 1px solid #FF6B00;
             padding: 0px 15px;
             height: auto;
             border-radius: 15px;
@@ -235,7 +233,7 @@ import Rechargeur from './Rechargeur.vue';
             padding: 15px 30px;
             font-size: 20px;
             background: #3C096C;
-            background: linear-gradient(185deg, rgba(60, 9, 108, 1) 0%, rgba(90, 24, 154, 1) 35%, rgba(60, 9, 108, 1) 87%);
+         background: linear-gradient(90deg, #913BC4, #FF6B00);
             color: white;
             border: none;
             border-radius: 5px;
@@ -253,7 +251,7 @@ import Rechargeur from './Rechargeur.vue';
      .advantage {
         width: 100%;
         min-height: 300px;
-        background-color: #f9f9f9;
+        background-color: #F2F2F2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -266,8 +264,7 @@ import Rechargeur from './Rechargeur.vue';
         font-weight: bold;
         color: #333;
      }
-     
-    
+
   
 
         .advantage-text {
@@ -288,7 +285,6 @@ import Rechargeur from './Rechargeur.vue';
         .advice {
             width: 100%;
             min-height: 400px;
-            background-color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;

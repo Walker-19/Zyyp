@@ -64,7 +64,7 @@ const subscriptions = [
         <Nav />
         <section class="pricing-header">
             <h1>Nos Tarifs & Abonnements</h1>
-            <p>
+            <p class="text-grey">
                 Avec <strong>Zypp</strong>, profitez d’une mobilité rapide, économique et 100% électrique dans Montpellier.  
                 Que vous soyez un utilisateur occasionnel ou un habitué des trajets urbains, nous avons une formule adaptée à vos besoins.  
                 Montez, glissez, arrivez à destination sans stress 🚀.

@@ -38,7 +38,7 @@ const props = defineProps({
     <p class="price">{{ price }}</p>
 
     <ul>
-      <li v-for="(el, index) in benefit" :key="index">
+      <li class="text-urban" v-for="(el, index) in benefit" :key="index">
         <i class="mdi mdi-check-circle"></i> {{ el }}
       </li>
     </ul>
@@ -49,7 +49,7 @@ const props = defineProps({
 
 <style scoped>
 .card-abonnement {
-  background: linear-gradient(135deg, #FF7900, #F6A609);
+  background: linear-gradient(135deg, #FF6B00, #ff6a0099);
   color: #fff;
   padding: 20px;
   border-radius: 15px;
