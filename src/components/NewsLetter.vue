@@ -68,11 +68,16 @@
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
-        background-color: #FF7900;
+         background: linear-gradient(90deg, #FF6F00, #7B2CBF);
         border: none;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
     }
+    
+.form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 
 </style>

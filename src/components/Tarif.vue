@@ -37,7 +37,7 @@
         <li><span>-</span> Tarification simple et transparente : 1€ la prise en main + 0,15¢/min.</li>
         <li><span>-</span> Abonnements mensuels et annuels pour les utilisateurs fréquents.</li>
       </ul>
-      <router-link to="/tarif">
+      <router-link class="decoration-none" to="/tarif">
           <button class="btn-explore">
             Découvrir nos tarifs
             <i class="mdi mdi-arrow-right"></i>

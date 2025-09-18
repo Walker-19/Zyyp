@@ -36,3 +36,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
 }
+.decoration-none {
+  text-decoration: none;
+}

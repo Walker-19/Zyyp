@@ -80,7 +80,6 @@ const toggleMobileMenu = () => {
         <div class="links">
 
           <router-link 
-
             v-for="link in links" 
 
             :key="link.path" 
@@ -99,7 +98,7 @@ const toggleMobileMenu = () => {
 
         <div class="cta">
 
-          <router-link to="/account">
+          <router-link class="decoration-none" to="/account">
 
             <button class="btn-signup">
 
@@ -153,7 +152,7 @@ const toggleMobileMenu = () => {
 
         <div class="cta-mobile">
 
-          <router-link to="/account">
+          <router-link class="decoration-none" to="/account">
 
             <button class="btn-signup">
 
@@ -292,8 +291,7 @@ header nav {
 }
 
 .nav-link:hover {
-
-  color: #FFD700;
+  color: #FF6F00;
 
   transform: scale(1.05);
 
