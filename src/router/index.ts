@@ -13,6 +13,8 @@ import Rechageur from '@/components/views/Rechageur.vue';
 import Trot from '@/components/views/Trot.vue';
 import Settings from '@/components/views/Settings.vue';
 import Mk_rechargeur from '@/components/Mk_rechargeur.vue';
+import Condition from '@/components/Condition.vue';
+import Confidentialite from '@/components/Confidentialite.vue';
 
 const routes = [
     {
@@ -39,6 +41,16 @@ const routes = [
         path: '/rechargeur',
         name: 'rechargeurPage',
         component: Mk_rechargeur
+    },
+    {
+        path: '/condition',
+        name: 'condition',
+        component: Condition
+    },
+    {
+        path: '/mentions',
+        name: 'mention',
+        component: Confidentialite
     },
     {
         path: "/account",

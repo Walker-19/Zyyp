@@ -27,8 +27,8 @@ const sections = ref([
   {
     title: 'Légal',
     links: [
-      { name: 'Confidentialité', path: '/' },
-      { name: 'Conditions', path: '/' },
+      { name: 'Confidentialité', path: '/mentions' },
+      { name: 'Conditions', path: '/condition' },
     ],
   },
 ])

@@ -5,6 +5,7 @@ import NewsLetter from './NewsLetter.vue';
 import Footer from './Footer.vue';
 import Nav from './Nav.vue';
 import Rechargeur from './Rechargeur.vue';
+import Cookie from './Cookie.vue';
 
 </script>
 
@@ -159,6 +160,7 @@ import Rechargeur from './Rechargeur.vue';
             <Tarif />
             <Rechargeur />
             <NewsLetter />
+            <Cookie />
             <Footer />
     </div>
 
