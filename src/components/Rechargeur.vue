@@ -30,7 +30,7 @@
         <div class="step">
           <div class="number-step">1</div>
           <h4><i class="mdi mdi-account-plus"></i> Inscription</h4>
-          <p>Postulez via notre plateforme partenaire pour rejoindre la communauté de rechargeurs.</p>
+          <p>  Créez votre compte Zypp et remplissez le formulaire dédié dans votre espace personnel pour rejoindre la communauté de rechargeurs.</p>
         </div>
 
         <div class="step">
