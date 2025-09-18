@@ -59,7 +59,11 @@ const toggleMobileMenu = () => {
 
     <nav>
 
-      <div class="logo">Logo</div>
+      <div class="logo">
+        <router-link class="decoration-none" to="/">
+          <img width="100%" height="100%" style="object-fit: contain;" src="../assets/zypp_logo.png" alt="" srcset="">
+        </router-link>
+      </div>
 
       <!-- Hamburger pour mobile -->
 
@@ -239,17 +243,6 @@ header nav {
 }
 
 /* Logo */
-
-.logo {
-
-  font-weight: bold;
-
-  color: #000000;
-
-  font-size: 20px;
-
-}
-
 /* Bloc desktop */
 
 .nav-desktop {

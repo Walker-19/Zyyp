@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import sideBar from './sideBar.vue';
 
+
 const rides = [
   {
     id: 1,

@@ -4,10 +4,14 @@ import Drive from '../components/Drive.vue';
 import About from '@/components/About.vue';
 import Login from '../components/Login.vue';
 import Register from '../components/Register.vue';
-import App_Admin from '../components/admin/App_Admin.vue';
+import App_Admin from '../components/views/App_Admin.vue';
 import Help from '@/components/Help.vue';
 import TarifPage from '@/components/TarifPage.vue';
-import RideHistory from '@/components/admin/RideHistory.vue';
+import RideHistory from '@/components/views/RideHistory.vue';
+import UserDashboard from '@/components/views/UserDashboard.vue';
+import Rechageur from '@/components/views/Rechageur.vue';
+import Trot from '@/components/views/Trot.vue';
+import Settings from '@/components/views/Settings.vue';
 
 const routes = [
     {
@@ -28,8 +32,8 @@ const routes = [
     {
         path: '/help',
         name: "Besoin d'aide",
-       component: Help
-     },
+        component: Help
+    },
     {
         path: "/account",
         name: "Login",
@@ -56,6 +60,29 @@ const routes = [
         path: '/dashboard/history',
         name: 'historiques',
         component: RideHistory
+    },
+
+    {
+        path: '/user_dashboard',
+        name: 'userDashboard',
+        component: UserDashboard
+    },
+    {
+        path: '/dashboard/rechargeur',
+        name: 'rechargeur',
+        component: Rechageur
+    },
+    {
+        path: '/dashboard/trottinette',
+        name: 'trottinettes',
+        component: Trot
+
+    },
+    {
+        path: '/dashboard/settings',
+        name: 'parametres',
+        component: Settings
+
     }
 
 

@@ -23,9 +23,15 @@ const   handleLogin =async () => {
         const userData = user.data[0];
         const passwordIsValid = await comparePassword(password.value, userData.password);
         if(passwordIsValid) {
+          if(userData.role == "admin") {
+            userStore.setUser(userData);
+             router.push('/dashboard')
+          }
+          else if(userData.role == "user") {
+            userStore.setUser(userData);
+            router.push('/user_dashboard')
+          }
             console.log("password is valid")
-           userStore.setUser(userData);
-            router.push('/dashboard')
         }
         else {
             console.log("password is invalid")

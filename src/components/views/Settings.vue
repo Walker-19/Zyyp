@@ -19,21 +19,18 @@ onMounted(() => {
 </script>
 
 <template>
+  <sideBar >
   <div class="dashboard">
-    <sideBar />
-    <div class="main">
-      <header class="topbar">
-        <h1>Bienvenue {{ userStore.user.name }}</h1>
-        <button>
-            <i class="mdi mdi-battery-charging-20"></i>
-            Devenir rechargeur
-        </button>
-      </header>
-      <main class="content">
-        <p>Contenu du tableau de bord</p>
-      </main>
+      <div class="main">
+        <header class="topbar">
+          <h1>Bonjour {{ userStore.user.name }}</h1>
+        </header>
+        <main class="content">
+          <p>Seting</p>
+        </main>
+      </div>
     </div>
-  </div>
+  </sideBar>
 </template>
 
 <style>
@@ -42,13 +39,15 @@ onMounted(() => {
   width: 100%;
 }
 .main {
-  margin-left: 250px;
+  width: 100%;
   flex: 1;
+  /* background-color: #3C096C; */
   padding: 20px;
 }
 .topbar {
     width: 100%;
     display: flex;
+    /* background-color: red; */
     justify-content: space-between;
 }
 .topbar button {

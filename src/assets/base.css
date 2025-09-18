@@ -58,3 +58,13 @@ body {
 .text-urban{
   color: #F2F2F2;
 }
+.logo {
+  width: 70px;
+  height: 70px;
+  font-weight: bold;
+
+  color: #000000;
+
+  font-size: 20px;
+
+}
