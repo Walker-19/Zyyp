@@ -8,10 +8,11 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const menuItems = [
-  { label: 'Accueil', key: 'home' },
-  { label: 'Historiques', key: 'rechargeurs' },
-  { label: 'Paramètres', key: 'settings' }
+  { label: 'Accueil', key: 'home', path: '/user_dashboard' },
+  { label: 'Historiques', key: 'rechargeurs', path: '/user_dashboard/history' },
+  { label: 'Paramètres', key: 'settings', path: '/user_dashboard/settings' }
 ]
+
 
 const selectedKey = ref('home')
 const mobileSiderVisible = ref(false)
@@ -25,6 +26,14 @@ const deconnexion = ()  => {
    userStore.clearUser();
    router.push('/')
    
+}
+
+const handleMenuSelect = (key: string) => {
+  const item = menuItems.find(i => i.key === key)
+  if (item?.path) {
+    console.log("path: ", item.path);
+        router.push(item.path)
+  }
 }
 </script>
 
@@ -42,7 +51,9 @@ const deconnexion = ()  => {
             <img width="100%" height="100%" style="object-fit: contain; " src="../../assets/zypp_logo.png" alt="" srcset="">
         </div>
     </div>
-      <n-menu style="margin-top: 20px;" :options="menuItems" v-model:value="selectedKey" />
+      <n-menu style="margin-top: 20px;"
+        @update:value="handleMenuSelect"
+      :options="menuItems" v-model:value="selectedKey" />
     </n-layout-sider>
 
     <!-- Sidebar mobile overlay -->
@@ -57,7 +68,9 @@ const deconnexion = ()  => {
         style="position: fixed; top: 0; left: 0; height: 100vh; z-index: 1100; background: white;"
         @click.stop
       >
-        <n-menu :options="menuItems" v-model:value="selectedKey" />
+        <n-menu
+            @update:value="handleMenuSelect"
+        :options="menuItems" v-model:value="selectedKey" />
       </n-layout-sider>
     </div>
 
@@ -78,12 +91,6 @@ const deconnexion = ()  => {
 
       <!-- Contenu -->
       <n-layout-content style="padding: 16px; background: #f5f5f5; min-height: calc(100vh - 64px);">
-        <div class="cards-grid">
-          <n-card title="Trottinettes actives">120</n-card>
-          <n-card title="Rechargeurs">25</n-card>
-          <n-card title="Locations aujourd'hui">340</n-card>
-          <n-card title="Revenue">480€</n-card>
-        </div>
         <div style="width: 100%; height: 400px;">
           <slot />
         </div>

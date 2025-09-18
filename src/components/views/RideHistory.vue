@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import sideBar from './sideBar.vue';
+import SideBarUser from './SideBarUser.vue';
+
 
 
 const rides = [
@@ -39,32 +40,34 @@ const rides = [
 </script>
 
 <template>
-      <sideBar />
-  <section class="ride-history">
-    <h2>Historique de vos trajets</h2>
+      <SideBarUser >
 
-    <table>
-      <thead>
-        <tr>
-          <th>Départ</th>
-          <th>Arrivée</th>
-          <th>Durée</th>
-          <th>Date</th>
-          <th>Prix</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="ride in rides" :key="ride.id">
-          <td>{{ ride.from }}</td>
-          <td>{{ ride.to }}</td>
-          <td>{{ ride.duration }}</td>
-          <td>{{ ride.date }}</td>
-          <td class="price">{{ ride.price }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-</template>
+        <section class="ride-history">
+          <h2>Historique de vos trajets</h2>
+          
+          <table>
+            <thead>
+              <tr>
+                <th>Départ</th>
+                <th>Arrivée</th>
+                <th>Durée</th>
+                <th>Date</th>
+                <th>Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="ride in rides" :key="ride.id">
+                <td>{{ ride.from }}</td>
+                <td>{{ ride.to }}</td>
+                <td>{{ ride.duration }}</td>
+                <td>{{ ride.date }}</td>
+                <td class="price">{{ ride.price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </SideBarUser>
+      </template>
 
 <style scoped>
 .ride-history {

@@ -12,6 +12,7 @@ import UserDashboard from '@/components/views/UserDashboard.vue';
 import Rechageur from '@/components/views/Rechageur.vue';
 import Trot from '@/components/views/Trot.vue';
 import Settings from '@/components/views/Settings.vue';
+import Mk_rechargeur from '@/components/Mk_rechargeur.vue';
 
 const routes = [
     {
@@ -33,6 +34,11 @@ const routes = [
         path: '/help',
         name: "Besoin d'aide",
         component: Help
+    },
+    {
+        path: '/rechargeur',
+        name: 'rechargeurPage',
+        component: Mk_rechargeur
     },
     {
         path: "/account",
@@ -57,7 +63,7 @@ const routes = [
         component: App_Admin
     },
     {
-        path: '/dashboard/history',
+        path: '/user_dashboard/history',
         name: 'historiques',
         component: RideHistory
     },

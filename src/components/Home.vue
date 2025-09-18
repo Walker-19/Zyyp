@@ -24,7 +24,10 @@ import Rechargeur from './Rechargeur.vue';
                             <span style="color: #FF6B00;" class="hand-highlight">
                                 Ensemble,
                             </span>
-                        </span> construisons une mobilité
+                        </span>
+                        <span class="text-urban">
+                            construisons une mobilité
+                        </span>
                         <span style="color: #FF6B00">
                             plus propre
                         </span>
@@ -37,7 +40,7 @@ import Rechargeur from './Rechargeur.vue';
                       :delay="200"
                       :duration="1050"
                       class="box-subheading">
-                    <h2 class="subheading">
+                    <h2 class="subheading text-urban">
                         <i class="mdi mdi-map-marker-radius" style="color: #FF6B00;"></i>
                         Dès janvier 2026, Montpellier bouge autrement : rapide, pratique et écologique
                     </h2>
@@ -192,7 +195,8 @@ import Rechargeur from './Rechargeur.vue';
     .home {
         width: 100%;
         height: 100vh;
-        margin-top: 80px;
+    
+        /* margin-top: 80px; */
     }
    
         .hero {
@@ -211,8 +215,21 @@ import Rechargeur from './Rechargeur.vue';
         }
         .hero-content {
             width: 100%;
+            position: relative;
             height: calc(100vh - 70px);
+            padding-top: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
+            background-size: cover;
+            background-image: url(../assets/hero-img.png);
         }
+        .hero-content::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.5); /* overlay sombre */
+            }
         .hero-text {
           width: calc(100% - 40px);
         }
@@ -223,7 +240,6 @@ import Rechargeur from './Rechargeur.vue';
         .hero .subheading {
             font-size: 16px;
             font-weight: 600;
-            color: #666;
             border: 1px solid #FF6B00;
             padding: 0px 15px;
             height: auto;
@@ -232,8 +248,7 @@ import Rechargeur from './Rechargeur.vue';
         .btn-hero {
             padding: 15px 30px;
             font-size: 20px;
-            background: #3C096C;
-         background: linear-gradient(90deg, #913BC4, #FF6B00);
+            background: #913BC4;
             color: white;
             border: none;
             border-radius: 5px;

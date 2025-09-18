@@ -98,8 +98,11 @@ onMounted(async () => {
   <sideBar>
       <div class="dashboard">
         <div class="main">
+            <h2>
+                Liste des chargeurs
+            </h2>
           <header class="topbar">
-            <h2>Demandes en attente de validation</h2>
+            <h3>Demandes en attente de validation</h3>
           </header>
           <main class="content">
             <n-data-table

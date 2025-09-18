@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import Nav from "./Nav.vue";
+import Footer from "./Footer.vue";
 // Étapes dynamiques
 const steps = ref([
   {
@@ -50,10 +51,11 @@ const steps = ref([
     <!-- Appel à action -->
     <div class="cta">
       <router-link to="/account" class="cta-btn">
-        Commencez dès aujourd’hui 🚲
+        Commencez dès aujourd’hui  <i style="font-size: 20px;"  class="mdi mdi-scooter-electric text-urban"></i>
       </router-link>
     </div>
   </section>
+  <Footer />
 </template>
 
 <style scoped>

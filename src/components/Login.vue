@@ -5,11 +5,13 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from '@/stores/user';
 import Nav from './Nav.vue';
+import Footer from './Footer.vue';
 
 const email = ref('')
 const password = ref('')
 const router = useRouter();
 const userStore = useUserStore();
+const message =  ref('')
 
 const   handleLogin =async () => {
   console.log('Tentative de connexion avec :', email.value, password.value)
@@ -17,6 +19,7 @@ const   handleLogin =async () => {
     console.log("email: ", email.value)
     const user = await supabase.from('user').select('*').eq('email', email.value).limit(1);
     if(user.error) {
+      message.value = "Une erreur est survenue sur le serveur. Veuillez réessayer plus tard ou contacter le support si le problème persiste."
         console.log("error to connection", user.error)
     }
     if(user.data && user.data.length > 0) {
@@ -34,6 +37,7 @@ const   handleLogin =async () => {
             console.log("password is valid")
         }
         else {
+          message.value = "Mot de passe incorrect. Veuillez réessayer."
             console.log("password is invalid")
         }
     }
@@ -62,6 +66,9 @@ const   handleLogin =async () => {
         <label for="password">Mot de passe</label>
         <input v-model="password" type="password" id="password" placeholder="Entrez votre mot de passe" required />
       </div>
+      <p style="color: red; padding: 5px;">
+          {{ message.valueOf().toString() }}
+      </p>
 
       <!-- Bouton connexion -->
       <button type="submit" class="btn-login">Se connecter</button>
@@ -73,6 +80,7 @@ const   handleLogin =async () => {
       </p>
     </form>
   </div>
+  <Footer />
 </template>
 
 <style scoped>

@@ -76,7 +76,9 @@ const handleMenuSelect = (key: string) => {
             <img width="100%" height="100%" style="object-fit: contain; " src="../../assets/zypp_logo.png" alt="" srcset="">
         </div>
     </div>
-        <n-menu :options="menuItems" v-model:value="selectedKey" />
+        <n-menu
+          @update:value="handleMenuSelect"
+         :options="menuItems" v-model:value="selectedKey" />
       </n-layout-sider>
     </div>
 

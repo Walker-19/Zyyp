@@ -13,7 +13,10 @@ const links = ref([
 
   { name: 'A propos', path: '/about' },
 
-  { name: "Besoin d'aide ?", path: '/help' }
+  { name: "Besoin d'aide ?", path: '/help' },
+  {
+    name: "Devenir rechargeur", path: '/rechargeur'
+  }
 
 ])
 
@@ -61,7 +64,7 @@ const toggleMobileMenu = () => {
 
       <div class="logo">
         <router-link class="decoration-none" to="/">
-          <img width="100%" height="100%" style="object-fit: contain;" src="../assets/zypp_logo.png" alt="" srcset="">
+          <img width="100%" height="100%" style="object-fit: fill;" src="../assets/Logo-ZYPP-VF.png" alt="" srcset="">
         </router-link>
       </div>
 
@@ -275,7 +278,7 @@ header nav {
 
   font-weight: 600;
 
-  font-size: 18px;
+  font-size: 16px;
 
   transition: color 0.3s, transform 0.3s;
 
@@ -315,7 +318,7 @@ button {
   font-weight: bold;
 
   color: #F2F2F2;
-  background:  #FF6B00;
+  background:  #913BC4;
   display: flex;
 
   align-items: center;

@@ -56,7 +56,6 @@ const changeRole = async () => {
           </button>
         </header>
         <main class="content">
-          <p>Contenu du tableau de bord</p>
         </main>
       </div>
     </div>
@@ -69,10 +68,15 @@ const changeRole = async () => {
   </SideBarUser>
 </template>
 
-<style>
+<style scoped>
 .dashboard {
   display: flex;
   width: 100%;
+}
+.content {
+    margin-top: 10px;
+    width: 100%;
+    background-color: red;
 }
 .main {
   width: 100%;

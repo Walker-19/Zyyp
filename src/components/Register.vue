@@ -2,7 +2,8 @@
 import supabase from "../api/index"
 import { ref } from "vue"
 import { hasPassword } from "@/utils/utils"
-import Nav from "./Nav.vue"
+import Nav from "./Nav.vue";
+import Footer from "./Footer.vue";
 
 const name = ref("")
 const email = ref("")
@@ -87,6 +88,7 @@ const handleRegister = async () => {
       </p>
     </form>
   </div>
+  <Footer />
 </template>
 
 <style scoped>
